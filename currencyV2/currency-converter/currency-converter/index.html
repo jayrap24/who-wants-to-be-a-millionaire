@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Currency Converter</title>
+    </head>
+    <body>
+        <!------------------------ Header ------------------------------>
+        <header role="banner">
+            <h1>Currency Convereter</h1>
+        </header>
+        <!-------------------------- Main section --------------------------->
+        <section role="main">
+            <!--------------------------Travel Location Form--------------------------->
+            <form>
+                <fieldset>
+                    <legend>Where are you traveling to?</legend>
+                        <label for="countryCurrency">
+                        <select id="countryCurrency" >
+                            <option value="AUD">Australia</option>
+                            <option value="JPY"selected>Japan</option>
+                            <option value="GBP" >England</option> 
+                        </select>
+                        </label>
+                    <button type="button" id="nextToAmountConversion">next</button>
+                </fieldset>
+            </form>
+            
+            <!--------------------------Amount Conversion Form--------------------------->
+             <form id="amountConversion">
+                <fieldset>
+                    <legend>How much US Dollars do you want to convert?</legend>
+                    <label for="fromDollar">round your dollar</label>
+                    <input id="fromDollar" type="number" value="1.00">
+                    <button type="button" id="nextToConvertedAmount">next</button>
+                </fieldset>
+            </form> 
+            
+                  
+                  
+            <!-------------------------Amount converted-------------------------------------->
+            <div id="convertedAmount">
+                <div id="googleMaps"></div>
+            </div>
+            <!-------------------------Google Maps-------------------------------------->
+            
+         
+        </section>
+        
+        
+        
+        
+        <!-------------------------- Footer --------------------------->
+        <footer role="contentinfo"></footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACGyqUv-viv_3q6-j9_xFpJSKAcg_U5zk&callback=initMap"
+    async defer></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

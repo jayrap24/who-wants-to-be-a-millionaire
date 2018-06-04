@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+         <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Currency Converter</title>
+    </head>
+    <body>
+        <!------------------------ Header ------------------------------>
+        <header role="banner">
+           <h1> <img src="LogoMakr_5ESGsE.png" id="logo" alt="logo">
+               </h1>
+        </header>
+        
+        <!-------------------------- welcome section --------------------------->
+        <aside id="welcome" role="complementary">
+            <div id="welcomePage">
+                <p id="helloWorld">Hello World.</p>
+                <p id="convertYour">Convert $$$</p>
+                <button type="button" id="start">start</button>
+            </div>
+        </aside>
+        
+        
+        <!-------------------------- Main section --------------------------->
+        <section id="mainSection" role="main">
+            <!--------------------------Travel Location Form--------------------------->
+            <form id="whereAreYouTraveling"role="form">
+                <fieldset>
+                    <legend>Where are you traveling to?</legend>
+                        <label for="countryCurrency">
+                        <select id="countryCurrency" >
+                            <option value="AUD">Australia</option>
+                            <option value="JPY"selected>Japan</option>
+                            <option value="GBP" >England</option>
+                            <option value="BRL" >Brazil</option> 
+                        </select>
+                        </label>
+                    <button type="button" id="nextToAmountConversion">next</button>
+                     
+                </fieldset>
+            </form>
+            
+            <!--------------------------Amount Conversion Form--------------------------->
+             <form id="amountConversion" role="form">
+                <fieldset>
+                    <legend>How much US Dollars to convert?</legend>
+                    <label for="fromDollar">round your dollar
+                    <input id="fromDollar" type="number" value="1.00">
+                        </label>
+                    <button type="button" id="nextToConvertedAmount">next</button>
+                     
+                </fieldset>
+            </form> 
+            
+                  
+                  
+            <!-------------------------Amount converted-------------------------------------->
+            
+            <div id="convertedAmount">
+            </div>
+            <div id="total">
+            <p>Your budget for your trip</p>
+                <button type="button" class="reset">reset</button>
+            </div>
+           
+           
+            
+         
+        </section>
+        
+        
+        
+        
+        <!-------------------------- Footer --------------------------->
+        <footer role="contentinfo"></footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACGyqUv-viv_3q6-j9_xFpJSKAcg_U5zk"
+    async defer></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

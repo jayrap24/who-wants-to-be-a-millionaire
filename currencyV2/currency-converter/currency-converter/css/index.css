@@ -1,0 +1,10 @@
+
+
+#convertedAmount, #amountConversion, .resultsContainer{
+    display: none;
+}
+
+#googleMaps{
+    height: 400px;
+    width: 400px;
+}
