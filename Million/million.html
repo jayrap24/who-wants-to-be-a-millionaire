@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/million.css">
+</head>
+<body>
+    <header role="banner">
+        <h1 class="start">Every answer you get right you win $100K </h1>
+        <button class="start" id="iDo">ready</button>
+        <label for="iDo" id="labelIDo"></label>
+    </header>
+    <section class="scoreBoard" role="region" style="display:none">
+
+        <div class="score">
+            <p>Question <span id="currentQuestionNum"></span> of 10</p>
+            <p>wallet <span id="wallet"></span> </p>
+        </div>
+        <div class="money" style="display:none">
+            <p>You won <span id="money"></span></p>
+            <input type="button" value="restart" name="restart" id="restart">
+            <label for="restart">
+            </label>
+        </div>
+    </section>
+    <section class="questions" role="region" style="display:none">
+        <form action="/" method="post" id="myForm">
+            <fieldset>
+                <legend>
+                    <div id="theQuestion">
+                    </div>
+                </legend>
+
+                <input type="radio" name="answer" value="A" id="answerA">
+                <label for="answerA" id="labelA">
+                    </label>
+
+                <input type="radio" name="answer" value="B" id="answerB">
+                <label for="answerB" id="labelB">
+                    </label>
+
+                <input type="radio" name="answer" value="C" id="answerC">
+                <label for="answerC" id="labelC">
+                    </label>
+
+                <input type="radio" name="answer" value="D" id="answerD">
+                <label for="answerD" id="labelD">
+                    </label>
+
+                <input type="submit" value="submit" id="submit">
+                <label for="submit" id="label">   
+                </label >
+            </fieldset>
+        </form>
+    </section>
+    <section>
+        <div class="correctFeedback" style="display:none">
+            <p class="statement"> You got it right!</p>
+                <input type="button" class="next" value="next" id="next" >
+                <label for="next"></label>
+                </div>
+                <div class="wrongFeedback" style="display:none">
+                    <p class="statement">Sorry, You got it wrong the correct answer is "<span id="theAnswer"></span>"</p>
+                    <input type="button" class="next" value="next" id="next">
+                    <label for="next"></label>
+                </div>
+    </section>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
