@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Currency Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <header role="banner">
+      <h1> <img src="LogoMakr_5ESGsE.png" id="logo" alt="logo">
+      </h1>
+      <div class="tickers">
+        <p id="aud"></p>
+        <p id="jpy"></p>
+        <p id="gbp"></p>
+        <p id="brl"></p>
+        <p id="eur"></p>
+        <p id="idr"></p>
+      </div>
+    </header>
+    <!-------------------------- welcome section --------------------------->
+    <aside role="complementary">
+      <div id="welcomePage">
+        <p id="helloWorld">Hello World.</p>
+        <p id="convertYour">Convert $$$</p>
+        <button type="button" id="start">start</button>
+      </div>
+    </aside>
+    <!-------------------------- Main section --------------------------->
+    <section id="mainSection" role="main">
+      <!--------------------------Amount Conversion Form--------------------------->
+      <form id="amountConversion" role="form">
+        <fieldset>
+          <legend>Which currency are you converting?</legend>
+          <label for="yourCurrency">
+                        <select id="yourCurrency" >
+                            <option value="AUD">Australia</option>
+                            <option value="JPY">Japan</option>
+                            <option value="GBP"selected>England</option>
+                            <option value="BRL" >Brazil</option>
+                            <option value="EUR" >Euro</option>
+                             <option value="USD" >United States</option>
+                        </select>
+                        </label>
+          <label for="currencyAmount">
+                    <input id="currencyAmount" type="number" value="100.00">
+                        </label><br>
+          <button type="button" id="nextToConvertedAmount">next</button>
+
+        </fieldset>
+      </form>
+      <!--------------------------Travel Location Form--------------------------->
+      <form id="whereAreYouTraveling" role="form">
+        <fieldset>
+          <legend>Where are you traveling to?</legend>
+          <label for="countryCurrency">
+                        <select id="countryCurrency" >
+                            <option value="AUD">Australia</option>
+                            <option value="JPY"selected>Japan</option>
+                            <option value="GBP" >England</option>
+                            <option value="BRL" >Brazil</option>
+                            <option value="EUR" >Europe</option> 
+                            <option value="USD" >United States</option>
+                        </select>
+                        </label><br>
+          <button type="button" id="nextToAmountConversion">next</button>
+
+        </fieldset>
+      </form>
+      <!-------------------------Amount converted-------------------------------------->
+      <div id="amountDiv">
+        <p id="convertedAmount"></p>
+        <button type="button" class="reset">reset</button>
+      </div>
+    </section>
+    <!-------------------------- Footer --------------------------->
+    <footer role="contentinfo">
+      <p>Website Made By <strong>Jesper A Rapouw</strong></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACGyqUv-viv_3q6-j9_xFpJSKAcg_U5zk" async defer></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

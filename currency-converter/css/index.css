@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: auto;
+}
+body {
+  background: #35826f;
+  color: white
+}
+/* --------- header------------*/
+img {
+  height: 50px;
+  cursor: pointer;
+}
+h1 {
+  border-bottom: 2px solid white;
+}
+.tickers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 70px;
+  padding: 10px;
+  text-align: center;
+  border-top: 6px solid #992f2f;
+}
+.tickers p {
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  font-weight: 300;
+  margin: 1px;
+  padding: 10px;
+}
+#welcomePage {
+  background: url(/Thinkful/projects/igor-ovsyannykov-355349-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 300px;
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+}
+#welcomePage {
+  font-size: 3em;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+#helloWorld,
+#convertYour {
+  display: none;
+  width: 60%;
+}
+#start {
+  background: #A42C0E;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  margin-top: 10px;
+  cursor: pointer;
+  display: none;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+#amountConversion,
+#whereAreYouTraveling {
+  background: url(/Thinkful/projects/atlas-green-1507-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 300px;
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+}
+fieldset {
+  border: none;
+}
+legend {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 400;
+  font-family: sans-serif;
+  letter-spacing: -2px;
+}
+#yourCurrency,
+#currencyAmount,
+#countryCurrency {
+  font-size: 15px;
+  margin: 10px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+#nextToConvertedAmount,
+#nextToAmountConversion {
+  background: #992f2f;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-top: 40px;
+}
+#amountDiv {
+  background: url(/Thinkful/projects/atlas-green-1507-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  height: 300px;
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px;
+}
+#amountDiv p {
+  font-size: 55px;
+  margin: 10px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+#amountDiv button {
+  background: #992f2f;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-top: 40px;
+}
+#amountConversion,
+#whereAreYouTraveling,
+#amountDiv {
+  display: none;
+}
+footer {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  margin-bottom: 50px;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+}
+footer p {
+  font-size: 16px;
+  margin-top: 70px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+/* --------- media change 700px------------*/
+@media only screen and (max-width: 700px) {
+  .tickers {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    height: 70px;
+    padding: 10px;
+    text-align: center;
+  }
+  .tickers p {
+    font-size: 14px;
+  }
+}
