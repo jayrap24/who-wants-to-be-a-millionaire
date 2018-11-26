@@ -5,9 +5,6 @@ A web application that lets users exchange their currency to their desired count
 https://whispering-headland-62710.herokuapp.com/homepage
 
 ## Technologies used
-  * Node.js
-  * Express.js
-  * Mongodb
-  * Mongoose
-  * Passport
-  * Mocha & Chai
+  * Javascript
+  * Jquery
+  
